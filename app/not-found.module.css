@@ -1,0 +1,18 @@
+.notFound{
+    font-size: 6rem;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+}
+
+.code{
+    color: red;
+}
+
+.err{
+    font-size:1.4rem; 
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}

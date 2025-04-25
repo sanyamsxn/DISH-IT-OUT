@@ -1,0 +1,54 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      padding: 2rem 10%;
+    }
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 1.25rem;
+  }
+  
+  
+  
+  .logo {
+    background: linear-gradient(90deg,#7e3186fe, #060306 );   
+    /* background: linear-gradient(90deg, #b79bc5, #ff67c2); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.15rem;
+    font-size: 4rem;
+  }
+
+  .logo img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+    border: 2px solid #dea0e4;
+    border-radius: 50%;
+  }
+  

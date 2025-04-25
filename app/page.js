@@ -1,9 +1,53 @@
+import Link from 'next/link';
+
+import classes from './page.module.css';
+import ImageSlideshow from './components/slideshow/image-slideshow';
+
 export default function Home() {
   return (
-    <main>
-      <img src="/icon.png" alt="A server surrounded by magic sparkles." />
-      <h1>Welcome to this NextJS Course!</h1>
-      <p>🔥 Let&apos;s get started! 🔥</p>
-    </main>
+    <>
+      <header className={classes.header}>
+        <div className={classes.slideshow}>
+          <ImageSlideshow/>
+        </div>
+        <div>
+          <div className={classes.hero}>
+            <h1>DishItOut FOR FOODIES</h1>
+            <p>Taste & share food from all over the world.</p>
+          </div>
+          <div className={classes.cta}>
+            <Link href="/community">Join the Community</Link>
+            <Link href="/meals">Explore Meals</Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section className={classes.section}>
+          <h2>How it works</h2>
+          <p>
+            DishItOut is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes, and to
+            connect with other food lovers.
+          </p>
+          <p>
+            DishItOut is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>Why DishItOut?</h2>
+          <p>
+            DishItOut is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes, and to
+            connect with other food lovers.
+          </p>
+          <p>
+            DishItOut is a place to discover new dishes, and to connect
+            with other food lovers.
+          </p>
+        </section>
+      </main>
+    </>
   );
 }
